@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa</title>
+    <link rel="stylesheet" href="style.css">
+    /*
+    widith x heigh
+        celular max 480 X 800
+        tablet portrait max 768 x 1024
+        tablet landscape max 1024 x 768
+        desktop max 1600 x 900
+        big screen min 1920 x 1080
+    */
+</head>
+<body>
+    <div class="layout" id="layout">
+        <header class="cabecalho">
+            <img class="cabecalho__logo" src="Imagens/logo.png" alt="Logo Ideia3">
+            <h1 class="cabecalho__titulo">IDEIA 3</h1>
+        </header>
+        <nav class="menu">
+            <div class="menu__item">
+                <span class="menu__icon">💰</span>
+                <span class="menu__titulo">Financeiro</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">💾</span>
+                <span class="menu__titulo">Salvar</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">🗑</span>
+                <span class="menu__titulo">Excluir</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">📧</span>
+                <span class="menu__titulo">Mensagem</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">📊</span>
+                <span class="menu__titulo">DashBoard</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">⚙</span>
+                <span class="menu__titulo">Configurações</span>
+            </div>
+            <div class="menu__item">
+                <span class="menu__icon">👤</span>
+                <span class="menu__titulo">Usuário</span>
+            </div>
+        </nav>
+        <main class="conteudo">
+            <div class="banner">
+                <picture class="banner__imagem">
+                    <source media="(max-width: 480px )" srcset="/Imagens/celular/banner-celular.png" type="image/png">
+                    <source media="(max-width: 768px)" srcset="/Imagens/tablet/banner-tablet.png" type="image/png">
+                    <img src="Imagens/desktop/banner-desktop.png" alt="banner">
+                </picture>
+            </div>
+            <div class="dashboard">
+                <div class="dashboard__card">
+                    <picture class="dashboard__imagem">
+                        <source media="(max-width: 480px )" srcset="/Imagens/celular/boticario-celular.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="/Imagens/celular/boticario-celular.png" type="image/png">
+                        <img src="Imagens/desktop/campboticario.png" alt="boticario">
+                    </picture>
+                    <p class="dashboard__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a quasi, soluta natus nisi quisquam sunt! Odit, cupiditate quae facere commodi non doloremque fugiat recusandae quo fuga blanditiis libero! Pariatur!</p>
+                </div>
+                <div class="dashboard__card">
+                    <picture class="dashboard__imagem">
+                        <source media="(max-width: 480px)" srcset="Imagens\celular\eudora-celular.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="Imagens\tablet\eudora-tablet.png" type="image/png">
+                        <img src="Imagens/desktop/campEudora.png" alt="eudora">
+                    </picture>
+                    <p class="dashboard__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum iste laudantium at dolor labore voluptate repellat, quasi culpa necessitatibus quia omnis ea esse iure eligendi eveniet itaque commodi a?</p>
+                </div>
+                <div class="dashboard__card">
+                    <picture class="dashboard__imagem">
+                        <source media="(max-width: 480px )" srcset="Imagens\celular\kwai-celular.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="Imagens\tablet\kwai-tablet.png" type="image/png">
+                        <img src="Imagens/desktop/campKwsai.png" alt="kwai">
+                    </picture>
+                    <p class="dashboard__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit reiciendis a cum, velit eius quos expedita ab non molestias neque aliquid itaque corrupti assumenda, illo explicabo temporibus fugit vel.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Contato</h2>
+            <p class="rodape__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur est reprehenderit pariatur assumenda ad ea necessitatibus excepturi voluptatem quibusdam ipsa dolor repellat ipsam, deserunt, quasi voluptates iusto laborum rem iste.</p>
+        </footer>
+    </div>
+    <script>
+
+        const main=document.getElementById("layout");
+        main.addEventListener("click",()=>{
+
+        });
+        const listaMenu=document.querySelectorAll(".menu__icon");
+        listaMenu.forEach(item=>{
+            item.addEventListener("click",)
+        });
+
+    </script>
+</body>
+</html>
