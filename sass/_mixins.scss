@@ -1,0 +1,7 @@
+@mixin borda-arredondada($raio:5px){
+    border-radius: $raio;
+}
+
+@mixin sombra ($deslocamentox, $deslocamentoy, $desfoque, $espalhamento: rgba(0, 0, 0, 0.3)){
+    box-shadow: $deslocamentox $deslocamentoy $desfoque $espalhamento;
+}

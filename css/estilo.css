@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  grid-template-areas: "header header" "nav main" "footer footer";
+}
+
+/*# sourceMappingURL=estilo.css.map */
