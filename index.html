@@ -11,10 +11,12 @@
 <body>
     <div class="layout" id="layout">
         <header class="cabecalho">
+            <button class="cabecalho__toggle" type="button" aria-label="Recolher menu">☰</button>
             <h1>Agência Criativa</h1>
             <span class="cabecalho__logo"><img src="Imagens/logo.png" alt="Logo Ideia3"></span>
+            
         </header>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <div class="menu__item">
                 <span class="menu__icon">💰</span>
                 <span class="menu__titulo">Financeiro</span>
@@ -59,7 +61,7 @@
                         <source media="(max-width: 768px)" srcset="/Imagens/celular/boticario-celular.png" type="image/png">
                         <img src="Imagens/desktop/campboticario.png" alt="boticario">
                     </picture>
-                    <p class="dashboard__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi a quasi, soluta natus nisi quisquam sunt! Odit, cupiditate quae facere commodi non doloremque fugiat recusandae quo fuga blanditiis libero! Pariatur!</p>
+                    
                 </div>
                 <div class="dashboard__card">
                     <picture class="dashboard__imagem">
@@ -67,7 +69,7 @@
                         <source media="(max-width: 768px)" srcset="Imagens\tablet\eudora-tablet.png" type="image/png">
                         <img src="Imagens/desktop/campEudora.png" alt="eudora">
                     </picture>
-                    <p class="dashboard__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum iste laudantium at dolor labore voluptate repellat, quasi culpa necessitatibus quia omnis ea esse iure eligendi eveniet itaque commodi a?</p>
+                    
                 </div>
                 <div class="dashboard__card">
                     <picture class="dashboard__imagem">
@@ -75,7 +77,7 @@
                         <source media="(max-width: 768px)" srcset="Imagens\tablet\kwai-tablet.png" type="image/png">
                         <img src="Imagens/desktop/campKwsai.png" alt="kwai">
                     </picture>
-                    <p class="dashboard__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit reiciendis a cum, velit eius quos expedita ab non molestias neque aliquid itaque corrupti assumenda, illo explicabo temporibus fugit vel.</p>
+                    
                 </div>
             </div>
         </main>
@@ -85,16 +87,12 @@
         </footer>
     </div>
     <script>
+        const layout=document.getElementById("layout");
+        const botao=document.querySelector(".cabecalho__toggle");
 
-        const main=document.getElementById("layout");
-        main.addEventListener("click",()=>{
-
+        botao.addEventListener("click",()=>{
+            layout.classList.toggle("layout--collapsed");
         });
-        const listaMenu=document.querySelectorAll(".menu__icon");
-        listaMenu.forEach(item=>{
-            item.addEventListener("click",)
-        });
-
     </script>
 </body>
 </html>

@@ -1,13 +1,62 @@
+@use'variaveis';
+
 .layout{
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 200px;
+    grid-template-columns: variaveis.$menuCompleto 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+
     grid-template-areas: 
     "cabecalho cabecalho"
     "menu conteudo"
     "menu dashboard"
     "rodape rodape";
 
-    max-width: 95vw;
+    max-width: 100vw;
     max-height: 100vh;
+
+    transition: grid-template-columns 0.3s ease;
+
+    &--collapsed{
+        display: grid;
+        grid-template-columns: variaveis.$menuEscondido 1fr;
+        grid-template-rows: 1fr 1fr 1fr 200px;
+
+        grid-template-areas: 
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "menu dashboard"
+        "rodape rodape";
+
+        max-width: 95vw;
+        max-height: 100vh;
+
+        transition: grid-template-columns 0.3s ease;
+
+        .menu__titulo{
+             opacity: 0;
+            pointer-events: none;
+        }
+
+    }
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+}
+
+.menu{
+    grid-area: menu;
+    overflow: hidden;
+}
+
+.conteudo{
+    grid-area: conteudo;
+}
+
+.dashboard{
+    grid-area:dashboard ;
+}
+
+.rodape{
+    grid-area:rodape ;
 }

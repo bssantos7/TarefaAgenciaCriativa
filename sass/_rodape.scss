@@ -1,0 +1,16 @@
+@use'variaveis';
+@use'mixins';
+
+.rodape{
+    background-color: variaveis.$corterciaria;
+    color: variaveis.$corprincipal;
+    font-family: variaveis.$fonte;
+    font-size: variaveis.$tamanhoFonte;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
