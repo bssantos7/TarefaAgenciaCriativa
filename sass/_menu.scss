@@ -1,0 +1,27 @@
+@use'variaveis';
+@use'mixins';
+
+.menu{
+    
+    grid-area: menu ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    background-color: variaveis.$corsecundaria;
+
+    .menu__item{
+        padding: 10px;
+        @include mixins.bordaArredondada;
+        color: white;
+        font-weight: bold;
+
+        &:hover{
+            background-color: variaveis.$corprincipal;
+            color: black;
+        }
+    }
+
+
+
+}

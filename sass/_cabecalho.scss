@@ -1,0 +1,20 @@
+@use'mixins';
+@use'variaveis';
+
+.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    
+    background-image: linear-gradient(to left, white, variaveis.$corprincipal);
+
+    h1{
+        font-family: variaveis.$fonte;
+        font-size: variaveis.$tamanhoFonte*2;
+        font-weight: bold;
+    }
+    
+}
